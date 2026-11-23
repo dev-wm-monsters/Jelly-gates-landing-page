@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- STATIC: replace example.com/jelly-gates with the real site URL -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://example.com/jelly-gates/</loc></url>
+<url><loc>https://example.com/jelly-gates/privacy.html</loc></url>
+<url><loc>https://example.com/jelly-gates/terms.html</loc></url>
+<url><loc>https://example.com/jelly-gates/support.html</loc></url>
+<url><loc>https://example.com/jelly-gates/delete-data.html</loc></url>
+</urlset>
