@@ -15,6 +15,8 @@ Build-time settings (environment variables): `NEXT_PUBLIC_SITE_URL` (full public
 ## Structure
 - `app/` pages: `/`, `/how-to-play/`, `/support/`, `/press/`, `/privacy/`, `/terms/`, `/delete-data/`, `not-found`, `sitemap.ts`, `robots.ts`
 - `lib/site.ts` all site facts (name, store links, email, FAQ, screenshot list); `lib/seo.ts` metadata + JSON-LD helpers
+- `components/` `Mascot` (Jelly), `GateDemo` (CSS-only animated demo), `TileIcon` (game tiles + symbols)
+- Motion: bouncy springs, squash-and-stretch and scroll pop-in are pure CSS and are switched off under `prefers-reduced-motion`
 - `public/` `app-ads.txt`, `llms.txt`, icons, game screenshots (`img/screens`, from the game repo's `design/handoff/progress`) and art (`img/art`)
 
 ## SEO / GEO / AEO

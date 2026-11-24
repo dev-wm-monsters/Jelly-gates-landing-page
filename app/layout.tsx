@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { BASE_PATH, SITE, SITE_URL } from "@/lib/site";
+import { SITE, SITE_URL } from "@/lib/site";
 import { SHARE_IMAGE } from "@/lib/seo";
 
 const title = localFont({ src: "./fonts/BagelFatOne-400.woff2", variable: "--font-title", display: "swap", weight: "400" });
@@ -23,7 +23,6 @@ export const metadata: Metadata = {
   applicationName: SITE.name,
   authors: [{ name: SITE.developer }],
   creator: SITE.developer,
-  icons: { icon: `${BASE_PATH}/icon.svg` },
   openGraph: { type: "website", siteName: SITE.name, locale: "en_US", images: [{ url: SHARE_IMAGE, width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image", images: [SHARE_IMAGE] },
 };

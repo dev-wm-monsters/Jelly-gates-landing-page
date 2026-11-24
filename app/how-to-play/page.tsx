@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
+import { Mascot } from "@/components/Mascot";
 import { Phone } from "@/components/Phone";
 import { abs, breadcrumbLd, pageMetadata } from "@/lib/seo";
 import { SCREENS } from "@/lib/site";
@@ -22,7 +23,7 @@ const steps = [
 export default function HowToPlay() {
   return (
     <main className="page" id="main"><div className="wrap">
-      <h1>How to play Jelly Gates</h1>
+      <div className="page-head"><h1>How to play Jelly Gates</h1><Mascot size={130} alt="Jelly the mascot" /></div>
       <p><strong>In short:</strong> drag each jelly out through the gate with its colour and symbol, before the timer runs out. Fewer moves earn more stars; stars build your town and coins buy boosters.</p>
       <ol className="steps">
         {steps.map((s) => <li key={s.name}><strong>{s.name}.</strong> {s.text}</li>)}

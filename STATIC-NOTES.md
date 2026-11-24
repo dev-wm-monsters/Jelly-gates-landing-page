@@ -17,6 +17,7 @@ Search the code for `STATIC:` to find each one.
 | 11 | Price model | FAQ in `lib/site.ts`, JSON-LD offer in `app/page.tsx`, `app/press` | Confirm free-to-play with ads and IAP (JSON-LD says price 0 USD) |
 | 12 | Release date / status | `app/press/page.tsx`, home band text | Launch date; replace "Coming soon" |
 | 13 | Restore-purchases menu path | `app/support/page.tsx`, FAQ | Confirm "Settings → Restore purchases" in the app |
-| 14 | Share image / icon | `public/img/share.png`, `public/icon.svg`, `public/favicon.svg` | Share image uses real game art; icon is a placeholder made from palette shapes; supply the final app icon (add a 180px PNG apple-touch-icon) |
+| 14 | Share image / icons | `public/img/share.png`, `app/icon.png`, `app/apple-icon.png`, `public/icon-512.png` | Share image and icons use the game's purple Jelly mascot art on cream; swap in the final app icon (game repo `app/assets/images/app_icon.png`) if preferred |
+| 17 | Mascot name and art | `components/Mascot.tsx`, `public/img/mascot/` | Mascot is the game's purple buddy art (`mood_r3_buddy_v1.png`, marked placeholder in the game's handoff README); the other jelly colours on the site are CSS hue-shifts of it. Confirm the mascot's name (site just says "Jelly") and final art |
 | 15 | Screenshots | `public/img/screens/*.webp` | Taken from the game repo's progress screenshots (shop shows "Demo prices"); replace with store-final captures when available |
 | 16 | Contact form / analytics | none | None built: mailto only, no analytics |

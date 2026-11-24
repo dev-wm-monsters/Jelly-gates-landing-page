@@ -24,7 +24,7 @@ export const appId = abs("/#app");
 
 export const organizationLd = {
   "@type": "Organization", "@id": orgId, name: SITE.developer, url: abs("/"),
-  logo: abs(`${BASE_PATH}/icon.svg`), email: SITE.email,
+  logo: abs(`${BASE_PATH}/icon-512.png`), email: SITE.email,
 };
 
 export function breadcrumbLd(items: { name: string; path: string }[]) {
