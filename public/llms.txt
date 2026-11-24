@@ -1,0 +1,21 @@
+# Jelly Gates
+
+> Jelly Gates is a candy-themed sliding-block puzzle game by Wakeup Monster for Android (Google Play) and iOS (App Store). Players slide coloured jellies out through the gate with the same colour and symbol, earn stars to build a jelly town, and play daily challenges. No login or cloud save: players are guests and progress is stored on the device. Monetisation: optional rewarded/interstitial ads (Google AdMob) and in-app purchases. Not directed at children under 13.
+
+Key facts:
+- Developer: Wakeup Monster
+- Genre: sliding-block puzzle (casual)
+- Platforms: Android, iOS (launching; store links on the home page when live)
+- Accounts: none (guest play)
+- Purchases: Google Play Billing / Apple StoreKit, verified by our Firebase Cloud Functions backend with a purchase token and product id only
+
+## Pages
+- [Home, features and FAQ](/): what the game is, screenshots, frequently asked questions
+- [How to play](/how-to-play/): step-by-step rules and tips
+- [Support](/support/): restoring purchases, lost progress, ads, contact
+- [Press kit](/press/): fact sheet, screenshots, brand colours, fonts
+- [Privacy Policy](/privacy/): data collected, ads, purchases, user rights
+- [Terms of Use](/terms/): licence, virtual items, purchases
+- [Delete your data](/delete-data/): how to delete local data and purchase-verification records
+
+<!-- STATIC: llms.txt links are root-relative; if the site is published under a sub-path or domain, prepend the full site URL (see STATIC-NOTES.md) -->

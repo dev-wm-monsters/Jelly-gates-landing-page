@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# STATIC: update with the real domain
-Sitemap: https://example.com/jelly-gates/sitemap.xml
