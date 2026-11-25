@@ -7,12 +7,12 @@ Search the code for `STATIC:` to find each one.
 | 1 | Google Play / App Store links | `lib/site.ts` (`playUrl`, `appStoreUrl`) | Store URLs (currently `#`); official badge artwork in `components/StoreBadges.tsx` |
 | 2 | AdMob publisher ID + app-ads.txt location | `public/app-ads.txt` | Real `pub-…` id replacing `pub-XXXXXXXXXXXXXXXX`. **Open check:** confirm in AdMob help whether the file may be served from the subdomain; if not, host it at `wakeupmonster.com/app-ads.txt` and set that as the developer website in the stores |
 | 3 | Support / contact / press email | `lib/site.ts` (`email`) | **Set:** `support@wakeupmonster.com`. Make sure the mailbox exists and is monitored before launch |
-| 4 | Company legal name & address | `app/privacy`, `app/terms`, `components/Footer.tsx`, `lib/site.ts` | Legal entity name and postal address (site says "Wakeup Monster") |
-| 5 | Governing law / venue | `app/terms/page.tsx` | Jurisdiction |
-| 6 | Effective date | `app/privacy`, `app/terms` | Date at launch |
-| 7 | Age statement (under 13) — **owner decision to confirm** | `app/privacy/page.tsx`, FAQ in `lib/site.ts` | Confirm; must match store age ratings and AdMob child-directed setting |
-| 8 | Draft banner "Draft — review by a lawyer before publishing" | `components/LegalPage.tsx` (`draft` prop on privacy, terms, delete-data) | Remove at launch after legal review |
-| 9 | **In-app text mismatch** | `app/privacy/page.tsx`; game repo `settings_popup.dart` | In-app Privacy says "If you sign in with Google…", contradicting the no-login decision. Update the app (or this page) so they agree. In-app Terms is one line; link it to `/terms/` |
+| 4 | Company legal name & address | — | **Decided:** no postal address; site uses "Wakeup Monster" |
+| 5 | Governing law / venue | `app/terms/page.tsx` | **Set to India** (same as the Let's Drag terms). Owner to confirm |
+| 6 | Effective date | `app/privacy`, `app/terms` | **Set:** 25 November 2026. Update if launch date changes materially |
+| 7 | Age statement (under 13) | `app/privacy/page.tsx`, FAQ in `lib/site.ts` | Text says "not directed at children under 13"; marker removed. Must match store age ratings and AdMob child-directed setting |
+| 8 | Draft banner | — | **Removed** (legal review done, per owner) |
+| 9 | In-app text mismatch | game repo `settings_popup.dart` | Owner will fix: in-app Privacy still says "sign in with Google"; link in-app Terms to `/terms/` |
 | 10 | Site URL / domain | `lib/site.ts` | **Set:** `https://jellygates.wakeupmonster.com` (Hostinger). Re-check if the domain changes |
 | 11 | Price model | FAQ in `lib/site.ts`, JSON-LD offer in `app/page.tsx`, `app/press` | Confirm free-to-play with ads and IAP (JSON-LD says price 0 USD) |
 | 12 | Release date / status | `app/press/page.tsx`, home band text | Launch date; replace "Coming soon" |

@@ -12,14 +12,14 @@ export const metadata: Metadata = pageMetadata({
 
 export default function Page() {
   return (
-    <LegalPage title="Delete your data" path="/delete-data/" draft>
+    <LegalPage title="Delete your data" path="/delete-data/">
 
 <p>Jelly Gates has no accounts, so there is no account to delete. Here is what data exists and how to remove it.</p>
 <h2>1. Data on your device</h2>
 <p>Your progress, settings and coin balance are stored only on your device. <strong>Uninstalling the game (or clearing its storage in your device settings) deletes all of it.</strong> We cannot see or delete it remotely.</p>
 <h2>2. Purchase-verification records</h2>
 <p>When you buy something, our backend stores the store purchase token and product id to prevent fraud. These records contain no name or e-mail. To request deletion:</p>
-<ol><li>E-mail <ContactEmail />{/* STATIC: placeholder contact email; owner must provide the real address */} with the subject "Delete my data".</li>
+<ol><li>E-mail <ContactEmail /> with the subject "Delete my data".</li>
 <li>Include the store order number (Google Play order ID or Apple order ID) for the purchases concerned, so we can find the records. We do not need your name or card details.</li>
 <li>We will confirm and delete matching records within 30 days, except records we must keep for fraud prevention or legal reasons (we'll tell you if so).</li></ol>
 <p className="note">Deleting verification records may mean we can no longer verify or restore those purchases through our service.</p>

@@ -12,11 +12,10 @@ export const metadata: Metadata = pageMetadata({
 
 export default function Page() {
   return (
-    <LegalPage title="Terms of Use" path="/terms/" draft>
+    <LegalPage title="Terms of Use" path="/terms/">
 
-<p><strong>Effective date:</strong> [EFFECTIVE DATE — to be set at launch] {/* STATIC: effective date is a placeholder; set at launch */}</p>
-<p className="note">{/* STATIC: in-app Terms screen is one line ("Jelly Gates is a game for fun. Play fair and have a sweet time!"); this page is the full version */}Note for the owner: the in-app Terms screen is a one-line summary. This page is the full version and should be linked from it.</p>
-<p>By downloading or playing Jelly Gates (the "Game"), published by <a href="https://wakeupmonster.com/" rel="noopener">Wakeup Monster</a> ("we") <em>[LEGAL NAME — to be provided]</em>, you agree to these terms. If you do not agree, do not use the Game.</p>
+<p><strong>Effective date:</strong> 25 November 2026</p>
+<p>By downloading or playing Jelly Gates (the "Game"), published by <a href="https://wakeupmonster.com/" rel="noopener">Wakeup Monster</a> ("we"), you agree to these terms. If you do not agree, do not use the Game.</p>
 <h2>1. Licence</h2>
 <p>We grant you a personal, non-exclusive, non-transferable, revocable licence to install and play the Game on devices you own or control, for non-commercial use, subject to these terms and the app store's usage rules. We keep all rights in the Game, including its art, music, code and name.</p>
 <h2>2. Virtual currency and items</h2>
@@ -34,9 +33,9 @@ export default function Page() {
 <h2>8. Changes and termination</h2>
 <p>We may update the Game or these terms. Continued use after an update means you accept it. We may suspend or end access if you breach these terms.</p>
 <h2>9. Governing law</h2>
-<p>These terms are governed by the laws of <em>[GOVERNING LAW / JURISDICTION — to be provided]</em>, without affecting mandatory consumer protections in your country of residence. {/* STATIC: governing law and venue placeholder */}</p>
+<p>These terms are governed by the laws of India, without affecting mandatory consumer protections in your country of residence.</p>
 <h2>10. Contact</h2>
-<p><ContactEmail />{/* STATIC: placeholder contact email; owner must provide the real address */}. See also our <Link href="/privacy/">Privacy Policy</Link>.</p>
+<p><ContactEmail />. See also our <Link href="/privacy/">Privacy Policy</Link>.</p>
 
     </LegalPage>
   );
