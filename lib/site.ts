@@ -1,14 +1,14 @@
-// STATIC: SITE_URL is a placeholder until the real domain exists. Set NEXT_PUBLIC_SITE_URL at build time
-// (include the sub-path for GitHub project pages, e.g. https://owner.github.io/Jelly-gates-landing-page).
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://example.com").replace(/\/$/, "");
+// Production domain (Hostinger subdomain). Override with NEXT_PUBLIC_SITE_URL for previews.
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://jellygates.wakeupmonster.com").replace(/\/$/, "");
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const SITE = {
   name: "Jelly Gates",
+  fullName: "Jelly Gates: Block Jam Puzzle",
   developer: "Wakeup Monster", // STATIC: confirm legal entity name
   tagline: "A candy sliding-block puzzle game for Android and iOS",
   description:
-    "Jelly Gates is a candy-themed sliding-block puzzle game by Wakeup Monster. Slide coloured jellies out through the gate of the same colour, build a sweet jelly town and play daily challenges on Android and iOS.",
+    "Jelly Gates: Block Jam Puzzle is a candy-themed sliding-block puzzle game by Wakeup Monster. Slide coloured jellies out through the gate of the same colour, build a sweet jelly town and play daily challenges on Android and iOS.",
   // STATIC: store links not available yet
   playUrl: "#",
   appStoreUrl: "#",
@@ -31,7 +31,7 @@ export const SCREENS = [
 ] as const;
 
 export const FAQ: { q: string; a: string }[] = [
-  { q: "What is Jelly Gates?", a: "Jelly Gates is a candy-themed sliding-block puzzle game by Wakeup Monster for Android and iOS. You slide coloured jellies across a board and out through the gate that matches their colour and symbol." },
+  { q: "What is Jelly Gates: Block Jam Puzzle?", a: "Jelly Gates: Block Jam Puzzle (Jelly Gates for short) is a candy-themed sliding-block puzzle game by Wakeup Monster for Android and iOS. You slide coloured jellies across a board and out through the gate that matches their colour and symbol." },
   { q: "How do you play Jelly Gates?", a: "Drag each jelly out through the gate with its colour and symbol. Clear the board before the timer runs out; fewer moves earn more stars. Stars build your jelly town, and coins buy boosters and refills." },
   { q: "Which devices does Jelly Gates run on?", a: "Jelly Gates is made for Android phones (Google Play) and iPhones (App Store). Store links will appear on this site when the game launches." },
   { q: "Is Jelly Gates free?", a: "Jelly Gates is built as a free-to-play game supported by optional rewarded ads and optional in-app purchases such as coin packs, extra moves, remove ads and cosmetics." },

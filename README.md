@@ -1,6 +1,6 @@
-# Jelly Gates — website
+# Jelly Gates: Block Jam Puzzle — website
 
-Next.js (App Router, TypeScript) **static export**: `npm run build` writes plain HTML/CSS to `out/`, so it hosts on GitHub Pages or Firebase Hosting. No runtime server, no external CDNs; fonts (SIL OFL) are self-hosted. Pages work with JavaScript disabled.
+Next.js (App Router, TypeScript) **static export**: `npm run build` writes plain HTML/CSS to `out/`, so it hosts on any static host (Hostinger in production). No runtime server, no external CDNs; fonts (SIL OFL) are self-hosted. Pages work with JavaScript disabled.
 
 **Status:** draft. Placeholders are marked `STATIC:` in the code and listed in [`STATIC-NOTES.md`](STATIC-NOTES.md). Legal pages carry a "Draft — review by a lawyer" banner.
 
@@ -10,7 +10,7 @@ npm install
 npm run dev                 # http://localhost:3000
 npm run build && npx serve out   # preview the exported site
 ```
-Build-time settings (environment variables): `NEXT_PUBLIC_SITE_URL` (full public URL, used for canonical/Open Graph/sitemap/JSON-LD) and `NEXT_PUBLIC_BASE_PATH` (only for a sub-path such as `/Jelly-gates-landing-page`).
+Build-time settings (environment variables): `NEXT_PUBLIC_SITE_URL` (full public URL, used for canonical/Open Graph/sitemap/JSON-LD) and `NEXT_PUBLIC_BASE_PATH` (only if ever served from a sub-path).
 
 ## Structure
 - `app/` pages: `/`, `/how-to-play/`, `/support/`, `/press/`, `/privacy/`, `/terms/`, `/delete-data/`, `not-found`, `sitemap.ts`, `robots.ts`
@@ -27,10 +27,13 @@ Build-time settings (environment variables): `NEXT_PUBLIC_SITE_URL` (full public
 - Press kit page with entity facts (developer, genre, platforms, status).
 - After launch: add the real store URLs to `sameAs`/`downloadUrl`, submit the sitemap in Google Search Console and Bing Webmaster Tools.
 
-## Publish
-**GitHub Pages:** `.github/workflows/pages.yml` builds and deploys on push to `main`. Settings → Pages → Source: GitHub Actions. Set repository variables `SITE_URL` (and `BASE_PATH` if not on a custom domain at the root). For a custom domain add `public/CNAME`.
-**Firebase Hosting:** `npm run build`, `firebase init hosting` with public dir `out`, then `firebase deploy`.
-`app-ads.txt` must be served at the root of the domain listed as the developer website in the stores.
+## Publish (Hostinger, jellygates.wakeupmonster.com)
+1. In hPanel create the subdomain `jellygates` for `wakeupmonster.com` (Domains → Subdomains); enable the free SSL for it.
+2. Build locally: `npm install && npm run build`. The site is now in `out/` (it already includes `.htaccess`, `404.html`, `llms.txt`, `app-ads.txt`).
+3. Upload **the contents of `out/`** (not the folder itself) into the subdomain's `public_html` folder (hPanel File Manager or FTP), replacing old files.
+4. Open `https://jellygates.wakeupmonster.com/` and `/privacy/`, `/sitemap.xml`, `/robots.txt`, `/llms.txt`.
+The default site URL is `https://jellygates.wakeupmonster.com`; set `NEXT_PUBLIC_SITE_URL` only to build a preview on another host.
+`app-ads.txt`: AdMob reads it from the developer-website domain listed in the store listings. Confirm in AdMob's help whether the subdomain is accepted; otherwise serve it from `https://wakeupmonster.com/app-ads.txt` (see STATIC-NOTES.md).
 
 ## URLs for the store consoles (replace `<domain>`)
 | Field | URL |

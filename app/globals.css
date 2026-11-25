@@ -28,6 +28,7 @@ nav.top a:hover{text-decoration:underline}
 @keyframes drift{to{translate:calc(100vw + 400px) 0}}
 .hero{display:grid;gap:32px;grid-template-columns:1fr;align-items:center;padding:24px 0 56px}
 .hero h1{font-size:clamp(2.8rem,9vw,5rem);line-height:1;margin:0 0 12px;color:var(--cherry);text-shadow:0 4px 0 #fff,0 8px 16px rgba(120,70,30,.25)}
+.hero h1 small{display:block;font-size:.34em;margin-top:.35em;color:var(--cocoa);text-shadow:0 2px 0 #fff;letter-spacing:.04em}
 .hero .tag{font-size:1.25rem;font-weight:700;margin:0 0 16px}
 .hero .lead{background:rgba(255,246,230,.8);border-radius:16px;padding:10px 14px;display:inline-block}
 .badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}

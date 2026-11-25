@@ -18,7 +18,7 @@ const body = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: `${SITE.name}: ${SITE.tagline}`, template: `%s | ${SITE.name}` },
+  title: { default: `${SITE.fullName} | Candy Sliding Block Game`, template: `%s | ${SITE.name}` },
   description: SITE.description,
   applicationName: SITE.name,
   authors: [{ name: SITE.developer }],

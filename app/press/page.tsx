@@ -15,10 +15,10 @@ const palette: [string, string][] = [["Cream", "#FFF6E6"], ["Caramel", "#E9C08E"
 export default function Press() {
   return (
     <main className="page" id="main"><div className="wrap">
-      <h1>Jelly Gates press kit</h1>
+      <h1>Jelly Gates: Block Jam Puzzle press kit</h1>
       <h2>Fact sheet</h2>
       <dl className="facts">
-        <dt>Game</dt><dd>Jelly Gates</dd>
+        <dt>Game</dt><dd>Jelly Gates: Block Jam Puzzle (short name: Jelly Gates)</dd>
         <dt>Developer</dt><dd>{SITE.developer}</dd>
         <dt>Genre</dt><dd>Sliding-block puzzle (casual)</dd>
         <dt>Platforms</dt><dd>Android (Google Play), iOS (App Store)</dd>

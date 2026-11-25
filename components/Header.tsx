@@ -9,7 +9,7 @@ export function Header() {
       <nav className="top" aria-label="Main">
         <Link href="/how-to-play/">How to play</Link>
         <Link href="/support/">Support</Link>
-        <Link href="/press/">Press</Link>
+        <Link href="/privacy/">Privacy</Link>
       </nav>
     </header>
   );

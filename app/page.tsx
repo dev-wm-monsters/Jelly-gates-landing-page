@@ -12,11 +12,11 @@ import { BASE_PATH, FAQ, SCREENS, SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   ...pageMetadata({
-    title: `${SITE.name}: ${SITE.tagline}`,
+    title: `${SITE.fullName} | Candy Sliding Block Game`,
     description: SITE.description,
     path: "/",
   }),
-  title: { absolute: `${SITE.name}: candy sliding-block puzzle game for Android & iOS` },
+  title: { absolute: `${SITE.fullName} | Candy Sliding Block Game` },
 };
 
 const features: { t: string; d: string; tile: string; sym: string }[] = [
@@ -34,7 +34,7 @@ const ld = {
     organizationLd,
     { "@type": "WebSite", "@id": abs("/#website"), url: abs("/"), name: SITE.name, publisher: { "@id": orgId }, inLanguage: "en" },
     {
-      "@type": ["MobileApplication", "VideoGame"], "@id": appId, name: SITE.name, description: SITE.description,
+      "@type": ["MobileApplication", "VideoGame"], "@id": appId, name: SITE.fullName, alternateName: SITE.name, description: SITE.description,
       applicationCategory: "GameApplication", genre: ["Puzzle", "Casual"], operatingSystem: "Android, iOS",
       gamePlatform: ["Android", "iOS"], inLanguage: "en", url: abs("/"),
       image: SCREENS.slice(0, 4).map((s) => abs(`${BASE_PATH}/img/screens/${s.file}.webp`)),
@@ -57,9 +57,9 @@ export default function Home() {
         <div className="cloud c1" aria-hidden="true" /><div className="cloud c2" aria-hidden="true" />
         <main id="main"><div className="wrap hero">
           <div>
-            <h1>Jelly Gates</h1>
+            <h1>Jelly Gates<small>Block Jam Puzzle</small></h1>
             <p className="tag">Slide the jellies. Match the gates. Pop the puzzle!</p>
-            <p className="lead">Jelly Gates is a candy sliding-block puzzle game for Android and iOS. Guide every coloured jelly out through the gate of its own colour, then build a sweet town with the stars you earn.</p>
+            <p className="lead">Jelly Gates: Block Jam Puzzle is a candy sliding-block puzzle game for Android and iOS. Guide every coloured jelly out through the gate of its own colour, then build a sweet town with the stars you earn.</p>
             <StoreBadges />
           </div>
           <div className="phones">

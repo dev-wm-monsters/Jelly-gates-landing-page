@@ -1,6 +1,6 @@
-# Jelly Gates
+# Jelly Gates: Block Jam Puzzle
 
-> Jelly Gates is a candy-themed sliding-block puzzle game by Wakeup Monster for Android (Google Play) and iOS (App Store). Players slide coloured jellies out through the gate with the same colour and symbol, earn stars to build a jelly town, and play daily challenges. No login or cloud save: players are guests and progress is stored on the device. Monetisation: optional rewarded/interstitial ads (Google AdMob) and in-app purchases. Not directed at children under 13.
+> Jelly Gates: Block Jam Puzzle (short name: Jelly Gates) is a candy-themed sliding-block puzzle game by Wakeup Monster for Android (Google Play) and iOS (App Store). Players slide coloured jellies out through the gate with the same colour and symbol, earn stars to build a jelly town, and play daily challenges. No login or cloud save: players are guests and progress is stored on the device. Monetisation: optional rewarded/interstitial ads (Google AdMob) and in-app purchases. Not directed at children under 13.
 
 Key facts:
 - Developer: Wakeup Monster
@@ -10,12 +10,11 @@ Key facts:
 - Purchases: Google Play Billing / Apple StoreKit, verified by our Firebase Cloud Functions backend with a purchase token and product id only
 
 ## Pages
-- [Home, features and FAQ](/): what the game is, screenshots, frequently asked questions
-- [How to play](/how-to-play/): step-by-step rules and tips
-- [Support](/support/): restoring purchases, lost progress, ads, contact
-- [Press kit](/press/): fact sheet, screenshots, brand colours, fonts
-- [Privacy Policy](/privacy/): data collected, ads, purchases, user rights
-- [Terms of Use](/terms/): licence, virtual items, purchases
-- [Delete your data](/delete-data/): how to delete local data and purchase-verification records
+- [Home, features and FAQ](https://jellygates.wakeupmonster.com/): what the game is, screenshots, frequently asked questions
+- [How to play](https://jellygates.wakeupmonster.com/how-to-play/): step-by-step rules and tips
+- [Support](https://jellygates.wakeupmonster.com/support/): restoring purchases, lost progress, ads, contact
+- [Press kit](https://jellygates.wakeupmonster.com/press/): fact sheet, screenshots, brand colours, fonts
+- [Privacy Policy](https://jellygates.wakeupmonster.com/privacy/): data collected, ads, purchases, user rights
+- [Terms of Use](https://jellygates.wakeupmonster.com/terms/): licence, virtual items, purchases
+- [Delete your data](https://jellygates.wakeupmonster.com/delete-data/): how to delete local data and purchase-verification records
 
-<!-- STATIC: llms.txt links are root-relative; if the site is published under a sub-path or domain, prepend the full site URL (see STATIC-NOTES.md) -->
