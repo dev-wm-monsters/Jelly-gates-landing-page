@@ -15,7 +15,7 @@ export default function Page() {
     <LegalPage title="Privacy Policy" path="/privacy/" draft>
 
 <p><strong>Effective date:</strong> [EFFECTIVE DATE — to be set at launch] {/* STATIC: effective date is a placeholder; set at launch */}</p>
-<p>This policy explains what happens to information when you play Jelly Gates (the "Game"), published by Wakeup Monster ("we", "us"). {/* STATIC: company legal name/address placeholder */} Our legal entity name and postal address: <em>[LEGAL NAME, ADDRESS — to be provided]</em>.</p>
+<p>This policy explains what happens to information when you play Jelly Gates (the "Game"), published by <a href="https://wakeupmonster.com/" rel="noopener">Wakeup Monster</a> ("we", "us"). {/* STATIC: company legal name/address placeholder */} Our legal entity name and postal address: <em>[LEGAL NAME, ADDRESS — to be provided]</em>.</p>
 <p className="note">{/* STATIC: in-app privacy screen (settings_popup.dart) still mentions "sign in with Google"; update the app text or this page so they agree (STATIC-NOTES.md) */}Note for the owner: the in-app Privacy screen currently says &quot;If you sign in with Google, we only use your account to keep your progress.&quot; The launch decision is no login and no cloud save, so this page says there is no account. Update the in-app text to match before release.</p>
 <h2>1. Short version</h2>
 <ul><li>There is no account, no login and no cloud save. You play as a guest.</li>

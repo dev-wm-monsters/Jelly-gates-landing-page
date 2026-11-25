@@ -16,7 +16,7 @@ export default function Page() {
 
 <p><strong>Effective date:</strong> [EFFECTIVE DATE — to be set at launch] {/* STATIC: effective date is a placeholder; set at launch */}</p>
 <p className="note">{/* STATIC: in-app Terms screen is one line ("Jelly Gates is a game for fun. Play fair and have a sweet time!"); this page is the full version */}Note for the owner: the in-app Terms screen is a one-line summary. This page is the full version and should be linked from it.</p>
-<p>By downloading or playing Jelly Gates (the "Game"), published by Wakeup Monster ("we") <em>[LEGAL NAME — to be provided]</em>, you agree to these terms. If you do not agree, do not use the Game.</p>
+<p>By downloading or playing Jelly Gates (the "Game"), published by <a href="https://wakeupmonster.com/" rel="noopener">Wakeup Monster</a> ("we") <em>[LEGAL NAME — to be provided]</em>, you agree to these terms. If you do not agree, do not use the Game.</p>
 <h2>1. Licence</h2>
 <p>We grant you a personal, non-exclusive, non-transferable, revocable licence to install and play the Game on devices you own or control, for non-commercial use, subject to these terms and the app store's usage rules. We keep all rights in the Game, including its art, music, code and name.</p>
 <h2>2. Virtual currency and items</h2>

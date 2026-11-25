@@ -6,7 +6,7 @@ Search the code for `STATIC:` to find each one.
 |---|---|---|---|
 | 1 | Google Play / App Store links | `lib/site.ts` (`playUrl`, `appStoreUrl`) | Store URLs (currently `#`); official badge artwork in `components/StoreBadges.tsx` |
 | 2 | AdMob publisher ID + app-ads.txt location | `public/app-ads.txt` | Real `pub-…` id replacing `pub-XXXXXXXXXXXXXXXX`. **Open check:** confirm in AdMob help whether the file may be served from the subdomain; if not, host it at `wakeupmonster.com/app-ads.txt` and set that as the developer website in the stores |
-| 3 | Support / contact / press email | `lib/site.ts` (`email`) | Real address replacing `support@example.com` (no personal email) |
+| 3 | Support / contact / press email | `lib/site.ts` (`email`) | **Set:** `support@wakeupmonster.com`. Make sure the mailbox exists and is monitored before launch |
 | 4 | Company legal name & address | `app/privacy`, `app/terms`, `components/Footer.tsx`, `lib/site.ts` | Legal entity name and postal address (site says "Wakeup Monster") |
 | 5 | Governing law / venue | `app/terms/page.tsx` | Jurisdiction |
 | 6 | Effective date | `app/privacy`, `app/terms` | Date at launch |

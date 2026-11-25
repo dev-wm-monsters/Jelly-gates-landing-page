@@ -13,7 +13,7 @@ export function Footer() {
         <li><Link href="/delete-data/">Delete your data</Link></li>
       </ul>
       {/* STATIC: legal company name and registered address not known; footer uses "Wakeup Monster" */}
-      <small>© 2026 Wakeup Monster. Jelly Gates is a trademark of its owner. Apple and the Apple logo are trademarks of Apple Inc. Google Play is a trademark of Google LLC.</small>
+      <small>© 2026 <a href="https://wakeupmonster.com/" rel="noopener">Wakeup Monster</a>. Jelly Gates is a trademark of its owner. Apple and the Apple logo are trademarks of Apple Inc. Google Play is a trademark of Google LLC.</small>
     </div></footer>
   );
 }

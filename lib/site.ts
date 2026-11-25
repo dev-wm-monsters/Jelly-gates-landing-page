@@ -6,14 +6,14 @@ export const SITE = {
   name: "Jelly Gates",
   fullName: "Jelly Gates: Block Jam Puzzle",
   developer: "Wakeup Monster", // STATIC: confirm legal entity name
+  companyUrl: "https://wakeupmonster.com/",
   tagline: "A candy sliding-block puzzle game for Android and iOS",
   description:
     "Jelly Gates: Block Jam Puzzle is a candy-themed sliding-block puzzle game by Wakeup Monster. Slide coloured jellies out through the gate of the same colour, build a sweet jelly town and play daily challenges on Android and iOS.",
   // STATIC: store links not available yet
   playUrl: "#",
   appStoreUrl: "#",
-  // STATIC: placeholder support email; owner must provide the real address
-  email: "support@example.com",
+  email: "support@wakeupmonster.com",
   lastUpdated: "2026-11-24",
 };
 

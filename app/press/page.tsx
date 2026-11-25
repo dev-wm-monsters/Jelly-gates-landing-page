@@ -19,14 +19,14 @@ export default function Press() {
       <h2>Fact sheet</h2>
       <dl className="facts">
         <dt>Game</dt><dd>Jelly Gates: Block Jam Puzzle (short name: Jelly Gates)</dd>
-        <dt>Developer</dt><dd>{SITE.developer}</dd>
+        <dt>Developer</dt><dd><a href={SITE.companyUrl} rel="noopener">{SITE.developer}</a> ({SITE.companyUrl.replace("https://", "").replace(/\/$/, "")})</dd>
         <dt>Genre</dt><dd>Sliding-block puzzle (casual)</dd>
         <dt>Platforms</dt><dd>Android (Google Play), iOS (App Store)</dd>
         <dt>Status</dt><dd>{/* STATIC: launch date and release status to confirm */}Coming soon [release date to be announced]</dd>
         <dt>Price</dt><dd>{/* STATIC: confirm price model */}Free to play with optional ads and in-app purchases [to be confirmed]</dd>
         <dt>Accounts</dt><dd>None: guest play, progress stored on device</dd>
         <dt>Website</dt><dd><a href={abs("/")}>{abs("/")}</a></dd>
-        <dt>Press contact</dt><dd>{/* STATIC: press contact */}<ContactEmail /></dd>
+        <dt>Press contact</dt><dd><ContactEmail /></dd>
       </dl>
       <h2>Description</h2>
       <p>{SITE.description}</p>

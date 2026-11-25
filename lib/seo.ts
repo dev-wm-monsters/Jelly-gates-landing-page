@@ -23,7 +23,7 @@ export const orgId = abs("/#organization");
 export const appId = abs("/#app");
 
 export const organizationLd = {
-  "@type": "Organization", "@id": orgId, name: SITE.developer, url: abs("/"),
+  "@type": "Organization", "@id": orgId, name: SITE.developer, url: SITE.companyUrl,
   logo: abs(`${BASE_PATH}/icon-512.png`), email: SITE.email,
 };
 
