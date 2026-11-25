@@ -35,6 +35,7 @@ export default function HowToPlay() {
       <ul>
         <li>Look at which gates are open before you move anything.</li>
         <li>If you are stuck, a booster can freeze the timer or pop a jelly.</li>
+        <li>Boosters are explained on the <Link href="/boosters/">boosters page</Link>, and the zones on the <Link href="/worlds/">worlds page</Link>.</li>
         <li>Come back daily for the daily challenge, daily treats and the lucky spin.</li>
       </ul>
       <p>More questions? See <Link href="/support/">Support</Link> or the <Link href="/">FAQ on the home page</Link>.</p>

@@ -12,7 +12,10 @@ Key facts:
 
 ## Pages
 - [Home, features and FAQ](https://jellygates.wakeupmonster.com/): what the game is, screenshots, frequently asked questions
+- [Full reference for AI assistants](https://jellygates.wakeupmonster.com/llms-full.txt): FAQ, worlds, boosters and characters in one file
 - [How to play](https://jellygates.wakeupmonster.com/how-to-play/): step-by-step rules and tips
+- [Worlds and levels](https://jellygates.wakeupmonster.com/worlds/): 6 zones, 6 boss gates
+- [Boosters](https://jellygates.wakeupmonster.com/boosters/): Freeze, Pop and Key
 - [Support](https://jellygates.wakeupmonster.com/support/): restoring purchases, lost progress, ads, contact
 - [Press kit](https://jellygates.wakeupmonster.com/press/): fact sheet, screenshots, brand colours, fonts
 - [Privacy Policy](https://jellygates.wakeupmonster.com/privacy/): data collected, ads, purchases, user rights

@@ -21,3 +21,7 @@ Search the code for `STATIC:` to find each one.
 | 17 | Mascot name and art | `components/Mascot.tsx`, `public/img/mascot/` | Mascot is the game's purple buddy art (`mood_r3_buddy_v1.png`, marked placeholder in the game's handoff README); the other jelly colours on the site are CSS hue-shifts of it. Confirm the mascot's name (site just says "Jelly") and final art |
 | 15 | Screenshots | `public/img/screens/*.webp` | Taken from the game repo's progress screenshots (shop shows "Demo prices"); replace with store-final captures when available |
 | 16 | Contact form / analytics | none | None built: mailto only, no analytics |
+| 18 | Buddy names | `lib/game.ts` (`BUDDIES`), `public/img/buddies/` | Names are the art folder names in the game repo (Djinn, Falcon, Lootie, Orion); descriptions only describe the pictures. Confirm which buddies ship and their names |
+| 19 | Zone / level / booster facts | `lib/game.ts` | Copied from the game repo (6 zones x 5 levels + boss gates; Freeze 5, Pop 10, Key 15; "owner, Nov 23" values). Re-check against the release build |
+| 20 | Website privacy statement | `app/privacy/page.tsx` section 7 | Says the site uses no cookies or analytics. Update if you add analytics |
+| 21 | Let's Drag link | `components/SisterApp.tsx`, `components/Footer.tsx` | Links to letsdrag.wakeupmonster.com; remove if you don't want cross-promotion |

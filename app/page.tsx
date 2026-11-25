@@ -5,6 +5,8 @@ import { Mascot } from "@/components/Mascot";
 import { TileIcon } from "@/components/TileIcon";
 import { Phone } from "@/components/Phone";
 import { StoreBadges } from "@/components/StoreBadges";
+import { Buddies } from "@/components/Buddies";
+import { SisterApp } from "@/components/SisterApp";
 import { Faq } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { appId, abs, orgId, organizationLd, pageMetadata } from "@/lib/seo";
@@ -100,12 +102,16 @@ export default function Home() {
         </div>
       </div></section>
 
+      <Buddies />
+
       <section className="block" style={{ paddingTop: 0 }}><div className="wrap" style={{ maxWidth: 800 }}>
         <h2>Frequently asked questions</h2>
         <Faq />
       </div></section>
 
-      <section className="band"><div className="wrap">
+      <SisterApp />
+
+      <section className="band" id="download"><div className="wrap">
         <div className="family" aria-hidden="true">
           <Mascot size={70} tint="cherry" delay={0} /><Mascot size={70} tint="lemon" delay={0.25} /><Mascot size={96} delay={0.5} />
           <Mascot size={70} tint="lime" delay={0.75} /><Mascot size={70} tint="blueberry" delay={1} />

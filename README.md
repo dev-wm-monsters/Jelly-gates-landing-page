@@ -13,7 +13,7 @@ npm run build && npx serve out   # preview the exported site
 Build-time settings (environment variables): `NEXT_PUBLIC_SITE_URL` (full public URL, used for canonical/Open Graph/sitemap/JSON-LD) and `NEXT_PUBLIC_BASE_PATH` (only if ever served from a sub-path).
 
 ## Structure
-- `app/` pages: `/`, `/how-to-play/`, `/support/`, `/press/`, `/privacy/`, `/terms/`, `/delete-data/`, `not-found`, `sitemap.ts`, `robots.ts`
+- `app/` pages: `/`, `/how-to-play/`, `/worlds/`, `/boosters/`, `/llms-full.txt`, `/support/`, `/press/`, `/privacy/`, `/terms/`, `/delete-data/`, `not-found`, `sitemap.ts`, `robots.ts`
 - `lib/site.ts` all site facts (name, store links, email, FAQ, screenshot list); `lib/seo.ts` metadata + JSON-LD helpers
 - `components/` `Mascot` (Jelly), `GateDemo` (CSS-only animated demo), `TileIcon` (game tiles + symbols)
 - Motion: bouncy springs, squash-and-stretch and scroll pop-in are pure CSS and are switched off under `prefers-reduced-motion`
